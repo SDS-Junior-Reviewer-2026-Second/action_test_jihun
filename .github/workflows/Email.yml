@@ -24,6 +24,7 @@ jobs:
       run: |
         aws ses send-email \
           --from "mincoding@naver.com"\
-          --destination "ToAddresses=bjhbjh0490@gmail.com" \
-          --message "Subject= {Data=테스트 메일 전송}, Body={Text={Data=안녕? KFC from Github Actions}}"
+          --destination "ToAddresses=sejin.choi@mincoding.co.kr" \
+          --message 'Subject={Data="테스트 메일 전송",Charset=UTF-8},Body={Text={Data="제 래포...",Charset=UTF-8},Html={Data="<p>살려주세요 짤</p><img src=\"https://d2u3dcdbebyaiu.cloudfront.net/uploads/atch_img/592/3562402c7f1dbdfe0f71e8efaec1c981.jpeg\" alt=\"KFC 이미지\" style=\"max-width:100%;height:auto;\">",Charset=UTF-8}}'
+  
     
